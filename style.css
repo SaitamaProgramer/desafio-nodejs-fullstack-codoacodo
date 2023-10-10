@@ -282,13 +282,27 @@ header {
     font-size: var(--font-display);
     text-transform: uppercase;
 }
+
+iconify-icon {
+    color: var(--dark-bg-solid);
+    font-size: var(--font-small);
+    font-weight: 700;
+}
+
+.glide__arrow--left {
+     left: 0;
+}
+.glide__arrow--right {
+    right: 0;
+}
+
 .slider__items {
     display: flex;
-    gap: var(--spacing-24);
+    
 }
-.slider__item {
 
-}
+  
+
 .card-item__content {
     display: flex;
     flex-direction: column;
@@ -367,3 +381,164 @@ header {
         opacity: 100%;
     }
 }
+
+
+/*-----------------------ESTILOS SHOP -----------------------------------------*/
+
+    /*-----------ASIDE SHOP------*/
+
+    .shop-container {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        position: relative;
+    }
+
+    .form-container {
+        position: relative;
+        top: 80px;
+        margin-left: var(--spacing-16);
+    }
+
+    .form-container__filtro {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: var(--spacing-12);
+    }
+
+    .form-container__text {
+        margin-top: var(--spacing-12);
+        margin-bottom: var(--spacing-12);
+    }
+
+
+
+    /*--------------------------PAGES BUTTONS (1,2,...,9,10 BOTONES PARA PASAR LISTAS DE PRODUCTOS*/
+    
+    .pages-container {
+        width: 100%;
+        margin: var(--spacing-12);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .pages-container__buttons {
+        display:flex ;
+        justify-content: center;
+        
+        
+    }
+            /*estilos botones*/
+    .pages-container__button {
+        width: var(--spacing-36);
+        height: var(--spacing-36);
+        margin: 0 var(--spacing-8);
+        border-radius: 4px;
+        background-color: var(--light-bg-solid);
+        border: 1px solid var(--dark-300);
+        outline: none;
+        font-family: var(--base-font);
+        font-weight: 700;
+        font-size: var(--font-small);
+    }
+        /*botones izquierda- derecha*/
+    .pages-container__btn-slide {
+        padding: var(--spacing-8);
+        width: var(--spacing-36);
+        height: var(--spacing-36);
+        border: 1px solid var(--dark-300);
+        border-radius: 4px;
+        outline: none;
+        background-color: var(--light-font-solid);
+        font-family: var(--base-font);
+        font-weight: 700;
+        font-size: var(--font-small);
+        color: var(--dark-300);
+    }
+
+    
+
+        /*estilo boton pagina activa*/
+    .btn-selected {
+        border: 1px solid var(--primary-solid);
+    }
+
+
+
+/*------------------------------------PAGINA ITEM  - agregar productos al carrito-----------------------------------------------------*/
+
+.add-product-container {
+    display: flex;
+    height: var(--spacing-36);
+}
+
+.add-product-container__display {
+    width: 120px;
+    height: var(--spacing-36);
+    border: .5px solid var(--dark-300);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-500);
+    font-size: var(--font-medium);
+    margin-right: var(--spacing-12);
+}
+
+.add-product-container__buttons {
+    display: flex;
+    flex-direction: column;
+    margin-right: var(--spacing-16);
+    
+}
+
+.add-product-container__button {
+    display: inline-block;
+    height: var(--spacing-16);
+    color: var(--light-bg-solid);
+    background-color: var(--dark-900);
+    outline: none;
+    border: none;
+    margin: auto;
+    width: var(--spacing-20);
+    padding: auto;
+}
+
+.add-product-container__button:hover {
+    background-color: var(--primary-solid);
+}
+
+.add-product-container__btn-cart {
+    width: 180px;
+    padding: 0 var(--spacing-16);
+    border: none;
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    margin-left: var(--spacing-16);
+    font-size: var(--font-medium);
+}
+.add-product-container__btn-cart:hover {
+    background-color: var(--dark-bg-solid);
+}
+
+.card-item__promo-method-pay {
+    text-decoration: underline;
+}
+
+.item-container h4 {
+    font-size: var(--font-jumbo);
+}
+
+.item-container p {
+    font-size: var(--font-large);
+    margin-top: var(--spacing-12);
+}
+
+.item-container p:last-child {
+    font-size: var(--font-small);
+    margin-top: var(--spacing-12);
+}
+
+
+

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!--INICIO HEADER-->
+    <header>
+      <nav class="navbar container">
+        <picture class="navbar__logo">
+            <a href="index.html">
+                <img src="/images/branding/logo_light_horizontal.svg" alt="logo funko pop">
+            </a>
+        </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="./pages/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                          <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                   </ul>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="">CONTACTO</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__cart" href=""><img src="/images/icons/cart-icon.svg" alt="icono carrito"></a>
+                </li>
+            </ul>
+        </nav>
+    </header> <!----------------FIN HEADER---------------->
+    
+    <!--------------- SECCION MAIN SHOP-------- -------------->
+     <main>
+      <div class="shop-container">
+        <aside>
+          <form action="" class="form-container">
+                <p class="form-container__text">BUSCAR</p>
+                <input type="text" name="buscar" id="buscar" placeholder="item o categoría">
+                <p class="form-container__text">ORDENAR POR</p>
+                <select name="order" id="order">
+                    <option value="menor-mayor">Menor a mayor</option>
+                    <option value="mayor-menor">Mayor a menor</option>
+                </select>
+                <p class="form-container__text">PRECIO</p>
+                <label for="price-min">Min</label>
+                <input type="number" name="price-min" id="price-min">
+                <label for="price-max"> - Max</label>
+                <input type="number" name="price-max" id="price-max">
+                <p class="form-container__text">FILTRAR</p>
+                <div class="form-container__filtro">
+                  <div class="">
+                    <input type="checkbox" name="nuevos" id="nuevos">
+                    <label for="nuevos">NUEVOS</label>
+                  </div>
+                  <div class="">
+                    <input type="checkbox" name="ofertas" id="ofertas">
+                    <label for="ofertas">OFERTAS</label>
+                  </div>
+                  <div class="">
+                    <input type="checkbox" name="edicio-especial" id="edicio-especial">
+                    <label for="edicio-especial">EDICIÓN ESPECIAL</label>
+                  </div>
+                  <div class="">
+                    <input type="checkbox" name="favoritos" id="favoritos">
+                    <label for="favoritos">FAVORITOS</label>
+                  </div>   
+                </div>
+              </form>
+        </aside>
+            <section class="slider container ">                       
+                <ul class="slider__items ">
+                    <li class="slider__item ">
+                    <article class="card-item">
+                        <a class="card-item__link" href="">
+                            <picture class="card-item__cover">
+                            <span class="card-item__tag">Nuevo</span>
+                            <img class="card-item__img--front" src="/images/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de Stormtrooper">
+                            <img class="card-item__img--back" src="/images/star-wars/trooper-box.webp" alt="Figura coleccionable Funko de Stormtrooper en Caja">
+                            </picture>
+                            <div class="card-item__content">
+                                <p class="card-item__licence">STAR WARS</p>
+                                <h4 class="card-item__name">STORMTROPPER</h4>
+                                <p class="card-item__price">$ 1799,99</p>
+                                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                            </div>
+                        </a>
+                    </article>
+                    </li>
+                    <li class="slider__item ">
+                    <article class="card-item">
+                        <a class="card-item__link" href="">
+                            <picture class="card-item__cover">
+                            <span class="card-item__tag">Nuevo</span>
+                            <img class="card-item__img--front" src="/images/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto">
+                            <img class="card-item__img--back" src="/images/pokemon/pidgeotto-box.webp" alt="Figura coleccionable Funko de Pidgeotto en Caja">
+                            </picture>
+                            <div class="card-item__content">
+                                <p class="card-item__licence">POKEMON</p>
+                                <h4 class="card-item__name">PiDGEOTO</h4>
+                                <p class="card-item__price">$ 1799,99</p>
+                                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                            </div>
+                        </a>
+                    </article>
+                    </li>
+                    <li class="slider__item ">
+                    <article class="card-item">
+                        <a class="card-item__link" href="">
+                            <picture class="card-item__cover">
+                            <span class="card-item__tag">Nuevo</span>
+                            <img class="card-item__img--front" src="/images/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Stormtrooper">
+                            <img class="card-item__img--back" src="/images/harry-potter/luna-box.webp" alt="Figura coleccionable Funko de Stormtrooper en Caja">
+                            </picture>
+                            <div class="card-item__content">
+                                <p class="card-item__licence">HARRY POTTER</p>
+                                <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
+                                <p class="card-item__price">$ 1799,99</p>
+                                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                            </div>
+                        </a>
+                    </article>
+                    </li>
+                </ul>
+                <ul class="slider__items ">
+                  <li class="slider__item ">
+                  <article class="card-item">
+                      <a class="card-item__link" href="">
+                          <picture class="card-item__cover">
+                          <span class="card-item__tag">Nuevo</span>
+                          <img class="card-item__img--front" src="/images/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de Stormtrooper">
+                          <img class="card-item__img--back" src="/images/star-wars/trooper-box.webp" alt="Figura coleccionable Funko de Stormtrooper en Caja">
+                          </picture>
+                          <div class="card-item__content">
+                              <p class="card-item__licence">STAR WARS</p>
+                              <h4 class="card-item__name">STORMTROPPER</h4>
+                              <p class="card-item__price">$ 1799,99</p>
+                              <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                          </div>
+                      </a>
+                  </article>
+                  </li>
+                  <li class="slider__item ">
+                  <article class="card-item">
+                      <a class="card-item__link" href="">
+                          <picture class="card-item__cover">
+                          <span class="card-item__tag">Nuevo</span>
+                          <img class="card-item__img--front" src="/images/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto">
+                          <img class="card-item__img--back" src="/images/pokemon/pidgeotto-box.webp" alt="Figura coleccionable Funko de Pidgeotto en Caja">
+                          </picture>
+                          <div class="card-item__content">
+                              <p class="card-item__licence">POKEMON</p>
+                              <h4 class="card-item__name">PiDGEOTO</h4>
+                              <p class="card-item__price">$ 1799,99</p>
+                              <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                          </div>
+                      </a>
+                  </article>
+                  </li>
+                  <li class="slider__item ">
+                  <article class="card-item">
+                      <a class="card-item__link" href="">
+                          <picture class="card-item__cover">
+                          <span class="card-item__tag">Nuevo</span>
+                          <img class="card-item__img--front" src="/images/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Stormtrooper">
+                          <img class="card-item__img--back" src="/images/harry-potter/luna-box.webp" alt="Figura coleccionable Funko de Stormtrooper en Caja">
+                          </picture>
+                          <div class="card-item__content">
+                              <p class="card-item__licence">HARRY POTTER</p>
+                              <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
+                              <p class="card-item__price">$ 1799,99</p>
+                              <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                          </div>
+                      </a>
+                  </article>
+                  </li>
+              </ul> 
+              <ul class="slider__items ">
+                <li class="slider__item ">
+                <article class="card-item">
+                    <a class="card-item__link" href="">
+                        <picture class="card-item__cover">
+                        <span class="card-item__tag">Nuevo</span>
+                        <img class="card-item__img--front" src="/images/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de Stormtrooper">
+                        <img class="card-item__img--back" src="/images/star-wars/trooper-box.webp" alt="Figura coleccionable Funko de Stormtrooper en Caja">
+                        </picture>
+                        <div class="card-item__content">
+                            <p class="card-item__licence">STAR WARS</p>
+                            <h4 class="card-item__name">STORMTROPPER</h4>
+                            <p class="card-item__price">$ 1799,99</p>
+                            <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+                </li>
+                <li class="slider__item ">
+                <article class="card-item">
+                    <a class="card-item__link" href="">
+                        <picture class="card-item__cover">
+                        <span class="card-item__tag">Nuevo</span>
+                        <img class="card-item__img--front" src="/images/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto">
+                        <img class="card-item__img--back" src="/images/pokemon/pidgeotto-box.webp" alt="Figura coleccionable Funko de Pidgeotto en Caja">
+                        </picture>
+                        <div class="card-item__content">
+                            <p class="card-item__licence">POKEMON</p>
+                            <h4 class="card-item__name">PiDGEOTO</h4>
+                            <p class="card-item__price">$ 1799,99</p>
+                            <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+                </li>
+                <li class="slider__item ">
+                <article class="card-item">
+                    <a class="card-item__link" href="">
+                        <picture class="card-item__cover">
+                        <span class="card-item__tag">Nuevo</span>
+                        <img class="card-item__img--front" src="/images/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Stormtrooper">
+                        <img class="card-item__img--back" src="/images/harry-potter/luna-box.webp" alt="Figura coleccionable Funko de Stormtrooper en Caja">
+                        </picture>
+                        <div class="card-item__content">
+                            <p class="card-item__licence">HARRY POTTER</p>
+                            <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
+                            <p class="card-item__price">$ 1799,99</p>
+                            <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+                </li>
+            </ul>  
+            </section>
+      </div>
+     </main>
+       <section class="pages-container">
+        <button class="pages-container__btn-slide"><</button>
+          <div class="pages-container__buttons">
+            <button class="pages-container__button btn-selected">1</button>
+            <button class="pages-container__button">2</button>
+            <button class="pages-container__button">...</button>
+            <button class="pages-container__button">9</button>
+            <button class="pages-container__button">10</button>
+          </div>
+          <button class="pages-container__btn-slide">></button>
+       </section>
+      
+     <footer class="footer">
+            <nav class="navbar container">
+                <ul class="nav__item">
+                  <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/shop.html">SHOP</a>
+                  </li>
+                  <li>
+                    <a class="navbar__link" href="/pages/register.html">REGISTRARSE</a>
+                  </li>
+                  <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/login.html">LOGIN</a>
+                  </li>
+                  <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/contact.html">CONTACTO</a>
+                  </li>
+                </ul>
+                <picture>
+                  <img src="/images/branding/isotype.svg" alt="isologotipo de la marca Funkoshop">
+                </picture>
+            </nav>
+
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+     </footer>
+     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+     <script>
+      new Glide('.glide',{
+        type: 'carousel',
+        startAt: 0,
+        perView: 3,
+        gap:30,
+        breakpoints: {
+          991: {
+            perView: 2
+          },
+          768: {
+            perView: 1
+          }
+        }
+      }).mount();
+    </script>
+</body>
+</html>
